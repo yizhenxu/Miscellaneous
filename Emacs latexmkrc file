@@ -1,0 +1,7 @@
+;; C-x C-f ~/.latexmkrc
+;; create new file and paste
+;; from https://tex.stackexchange.com/questions/316787/getting-synctex-to-work-with-emacs-auctex-and-skim-os-x-el-capitan
+
+$pdflatex = 'pdflatex -interaction=nonstopmode -synctex=1 %O %S';
+$pdf_previewer = 'open -a skim';
+$clean_ext = 'bbl rel %R-blx.bib %R.synctex.gz';
